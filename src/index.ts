@@ -56,7 +56,7 @@ const getMoviesByGenre = (genre: string): void => {
     console.log(" No movies found in this genre.");
     return;
   }
-  console.log(`\n🎞️ Movies in Genre: ${genre}`);
+  console.log(`\n Movies in Genre: ${genre}`);
   filteredMovies.forEach(m => console.log(` ${m.title} (${m.releaseYear})`));
 };
 
@@ -76,7 +76,7 @@ const searchMoviesBasedOnKeyword = (keyword: string): void => {
     console.log("No movies found with this keyword.");
     return;
   }
-  console.log(`\n🔍 Movies containing '${keyword}':`);
+  console.log(`\n Movies containing '${keyword}':`);
   filteredMovies.forEach(m => console.log(` ${m.title} (${m.releaseYear})`));
 };
 
